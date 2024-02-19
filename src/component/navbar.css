@@ -1,0 +1,63 @@
+
+
+.container{
+    max-width: 80rem;
+    padding: 1.2rem 3.5rem;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(198,224,255,0.5045200208989846) 42%, rgba(198,224,255,0.8826712814031863) 56%, rgba(198,224,255,1) 99%);;
+    height: 45px;
+    
+}
+.logo-brand{
+   font-size: 2rem;
+   font-family: Harrington;
+   font-weight:bolder;
+   color:  rgb(22, 22, 141);;
+   
+
+}
+
+ul{
+    display: flex;
+    gap: 3rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-weight: 550;
+    font-family: georgia;
+    color: rgb(22, 22, 141);
+    font-size: 1.2rem;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+.dekstopMenuListItem:hover{
+    color: rgb(0, 145, 255);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(0, 145, 255);
+}
+.btn1{
+    height: 35px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 550;
+    font-family: georgia;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: -10px;
+    border: none;
+
+
+}
+.btn1:hover{
+    background-color: rgb(8, 57, 87);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(35, 211, 255);
+}

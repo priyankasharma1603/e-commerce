@@ -1,0 +1,32 @@
+
+
+
+.box1 {
+  font-family: georgia;
+  margin: auto;
+  margin-top: 70px;
+  width: 650px;
+  height: 400px;
+  outline: dashed 1px rgb(0, 0, 0);
+  background-color: rgb(224, 234, 255);
+  padding: 30px;
+  text-align:justify;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.heading1{
+   font-size: 2.5rem;
+   color: rgb(9, 12, 56);
+   text-align: center;
+   font-family: Harrington;
+   font-weight: bolder;
+   text-decoration: underline;
+
+}
+.para1{
+  padding: 40px;
+  line-height: 1.7rem;
+  color: rgb(197, 62, 62);
+  font-weight: 800;
+  font-size: 20px;
+}
