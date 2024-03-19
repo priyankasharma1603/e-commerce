@@ -17,18 +17,22 @@ export const Login = () => {
 
           </div>
        </div>
-       <div className='text'>
-        <h1>User Login</h1>
-        <div className='second-input'>
-        <img src={email} alt='email' className='email'/>
-        <input type='text' placeholder='username' className='name'/>
-        </div>
-        <div className='second-input'>
-        <img src={pass} alt='pass' className='email'/>
-        <input type='password' placeholder='passsword' className='name'/>
-        </div>
-        <button className='btn2'>Login</button> 
-        </div>
+       <form >
+       {/* action='#' method='POST' */}
+          <div className='text'>
+          <h1>User Login</h1>
+
+          <div className='second-input'>
+          <img src={email} alt='email' className='email'/>
+          <input type='text' placeholder='username' className='name' id='userEmail'/>
+          </div>
+          <div className='second-input'>
+          <img src={pass} alt='pass' className='email'/>
+          <input type='password' placeholder='passsword' className='name' id='pass'/>
+          </div>
+          <button className='btn2' onClick={myFunction}>Login</button> 
+          </div>
+        </form>
         <div className='acc'>
           <a href='/'>Forgot Password?</a>
           <p>Not registered?  
@@ -42,4 +46,27 @@ export const Login = () => {
   </div>
   )
 }
+
+function myFunction() {
+  let obj = {
+    email:'devanshgupta1947@gmail.com',
+    pass:1234
+  }
+  // event.preventDefault();
+
+  let ref_id = document.getElementById('userEmail').value
+  let ref_pass = Number(document.getElementById('pass').value);
+  // console.log(typeof ref_pass)
+
+  if(ref_id === obj.email) {
+      if(ref_pass === obj.pass) {
+          window.alert("Successfully logged in");
+      } else {
+          window.alert("Password is incorrect")
+      }
+  } else {
+      window.alert("Enter a valid Email")
+  }
+}
+
  export default Login
